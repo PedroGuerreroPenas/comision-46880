@@ -1,0 +1,382 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.fot{
+    height: 100vh;
+}
+
+.header-ubicacion{
+    height: auto;
+}
+
+.main-ubicacion{
+    height: 80%;
+}
+
+.footer-ubicacion{
+    height: auto;
+}
+/* header */
+.navbar{
+    margin: 0%;
+}
+
+.navbar a{
+    padding: 5px 10px;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.navbar li a:hover{
+    color: rgb(194, 118, 104);
+    text-decoration: underline;
+}
+
+.menu-contenido{
+    background-color: #303030;
+}
+
+
+.navbar li a:checked{
+    text-decoration: underline;
+    color: rgb(194, 118, 104);
+}
+
+.Logo a{
+    padding: 5px 10px;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.Logo{
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: bold;
+    align-items: center;
+}
+
+.Logo img{
+    width: 60px;
+    float: left;
+    position: relative;
+    align-items: center;
+}
+
+.nav-wrapper{
+    width: 100%;
+}
+
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo{
+    font-weight: 700;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav #toggle, nav label{
+    display: none;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* fin del header */
+
+/* Main del index, inicio */
+
+
+header section{
+    display: flex;
+    background-color: #303030;
+}
+
+.cliente{
+    width: 35vw;
+    max-width: 1000px;
+    min-width: 320px;
+    height: 35vw;
+    max-height: 1000px;
+    min-height: 320px;
+    margin: auto;
+    overflow: hidden;
+    border: .125rem solid;
+    border-radius: 100%;
+}
+
+.cliente img{
+    width: 100%;
+}
+
+.move{
+    display: flex;
+    flex-direction:row-reverse;
+}
+
+.reseña{
+    height: 100%;
+    justify-content: center;
+    padding: 50px;
+    align-items: center;
+    font-size: 1em;
+    gap: 40px;
+}
+
+/* fin del main de index, inicio */
+
+.aboutUs{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 3.75rem;
+}
+
+/* Footer */
+#footer{
+    display: flex;
+    background-color: #303030;
+    position: sticky;
+    padding-bottom: 0;
+    margin: 0;
+}
+
+.copyright{
+    display: flex;
+    list-style-type: none;
+    gap: .625rem;
+    margin: 10px;
+    padding: 1.875rem;
+    color: #fff;
+}
+
+.red{
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    list-style-type: none;
+    right: 0;
+    gap: .625rem;
+    margin: 10px;
+    padding: 10px;
+}
+
+.mover{
+    display: flex;
+    align-items: center;
+}
+
+.redes{
+    width: 100%;
+}
+
+.redes img{
+    width: 2.5rem;
+}
+
+.acomodar{
+    display: flex;
+}
+
+/* fin del footer */
+
+
+/*Tienda, ahora esta en comunidad y en galeria lo cambio despues*/
+
+h2{
+    text-align: center;
+}
+
+.venta{
+    width: 21.875rem;
+    height: 100%;
+    background-color: rgb(167, 247, 216);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px gray;
+    margin: 2.5rem;
+}
+
+.venta img{
+    width: 100%;
+}
+
+.tienda{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+
+.centro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+    padding: 40px;
+}
+
+/* fin de "Tienda" */
+
+/* Tienda real main*/
+
+.producto{
+    display: grid;
+    grid-template-columns: repeat(6, 200px);
+    grid-template-rows: repeat(2, 150px);
+    grid-template-areas: 
+    "section-1 section-1 section-2 section-2 section-3 section-3"
+    "section-1 section-1 section-2 section-2 section-3 section-3"
+    ;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.section-1{
+    grid-area: section-1;
+    color: aqua;
+    object-fit: cover;
+}
+
+.section-1 img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.section-2{
+    grid-area: section-2;
+    color: aquamarine;
+    object-fit: cover;
+}
+
+.section-2 img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.section-3{
+    grid-area: section-3;
+    color: brown;
+    object-fit: cover;
+}
+
+.section-3 img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.mural-item{
+    position: relative;
+}
+
+.texto-mural{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    font-size: 18px;
+}
+
+.espacio{
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+/* Fin de tienda real */
+/* madia */
+
+@media (min-width:320px) and (max-width:768px){
+    nav{
+        width: auto;
+    }
+    nav .menu{
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    nav label{
+        display: flex;
+        color: #fff;
+    }
+    nav #toggle:checked ~ .menu{
+        height: 100%;
+    }
+}
+
+@media (min-width:320px){
+    .cliente{
+    width: 50vw;
+    max-width: 768px;
+    min-width: 0px;
+    height: 50vw;
+    max-height: 768px;
+    min-height: 0px;
+    margin: auto;
+    overflow: hidden;
+    border: .125rem solid;
+    border-radius: 100%;
+    }
+    .cliente-reseña{
+        justify-items: center;
+        font-size: 1em;
+    }
+    .aumentar-texto{
+        font-size: 16px;
+    }
+
+}
+
+@media(min-width:375px)
+{
+    .aumentar-texto{
+        font-size: 18px;
+    }
+}
+
+@media(min-width:425px)
+{
+    .aumentar-texto{
+        font-size: 19px;
+    }
+}
+
+@media (min-width:768px){
+    .aumentar-texto{
+        font-size: 24px;
+    }
+    .reseña{
+        display: flex;
+    }
+}
+
+@media (min-width:1024px){
+    .aumentar-texto{
+        font-size: 32px;
+    }
+}
+
+@media (min-width:1440px){
+    .aumentar-texto{
+        font-size: 38px;
+    }
+}
+/* fin del media */
