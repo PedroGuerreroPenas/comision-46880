@@ -16,4 +16,8 @@
 - BOOTSTRAP
 - MATERIAL UI (MUI)
 
+## Nota:
+
+>Todas las paginas tienen bootstrap en su nav y en el carrusel de index (inicio), y el mediaquerry esta en en index (inicio)
+
 ## ALUMNO: Pedro Guerrero Penas
