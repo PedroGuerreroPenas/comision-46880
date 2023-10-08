@@ -1,14 +1,160 @@
-header {
-  background-color: rgb(91, 85, 185);
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
 header section {
-  background-color: aqua;
+  display: flex;
+  background-color: #303030;
+}
+header section .nav-wrapper {
+  width: 100%;
 }
 header section nav {
-  background-color: blue;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
-header section nav a {
-  background-color: aqua;
+header section nav .Logo {
+  font-weight: 700;
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: bold;
+  align-items: center;
+}
+header section nav .Logo img {
+  width: 60px;
+  float: left;
+  position: relative;
+  align-items: center;
+}
+header section nav .Logo a {
+  padding: 5px 10px;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+}
+header section nav ul {
+  list-style: none;
+}
+header section nav ul .menu-contenido {
+  background-color: #303030;
+}
+header section nav .navbar {
+  margin: 0%;
+  gap: 0.625rem;
+}
+header section nav .navbar a {
+  padding: 5px 10px;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+}
+header section nav .navbar a:hover {
+  color: rgb(194, 118, 104);
+  text-decoration: underline;
+}
+header section nav #toggle, header section nav label {
+  display: none;
+  padding: 10px;
+  margin: 10px;
+}
+
+footer {
+  display: flex;
+  background-color: #303030;
+  position: sticky;
+  padding-bottom: 0;
+  margin: 0;
+}
+footer section {
+  display: flex;
+}
+footer section div p {
+  display: flex;
+  list-style-type: none;
+  gap: 0.625rem;
+  margin: 10px;
+  padding: 1.875rem;
+  color: #fff;
+}
+footer section div {
+  display: flex;
+  align-items: center;
+}
+footer section div ul {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  list-style-type: none;
+  right: 0;
+  gap: 0.625rem;
+  margin: 10px;
+  padding: 10px;
+}
+footer section div ul li {
+  width: 100%;
+}
+footer section div ul li img {
+  width: 2.5rem;
+}
+
+.reseña {
+  height: 100%;
+  justify-content: center;
+  padding: 50px;
+  align-items: center;
+  font-size: 1em;
+  gap: 40px;
+  display: flex;
+}
+
+.move {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.cliente {
+  width: 35vw;
+  max-width: 1000px;
+  min-width: 320px;
+  height: 35vw;
+  max-height: 1000px;
+  min-height: 320px;
+  margin: auto;
+  overflow: hidden;
+  border: 0.125rem solid;
+  border-radius: 100%;
+}
+.cliente img {
+  width: 100%;
+}
+
+@media (min-width: 320px) {
+  .cliente {
+    width: 50vw;
+    max-width: 768px;
+    min-width: 0px;
+    height: 50vw;
+    max-height: 768px;
+    min-height: 0px;
+    margin: auto;
+    overflow: hidden;
+    border: 0.125rem solid;
+    border-radius: 100%;
+  }
+  .cliente-reseña {
+    justify-items: center;
+    font-size: 1em;
+  }
+  .aumentar-texto {
+    font-size: 16px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,61 @@
+header{
+    section{
+        display: flex;
+        background-color: #303030;
+        .nav-wrapper{
+            width: 100%;
+        }
+        nav{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            .Logo{
+                font-weight: 700;
+                display: flex;
+                font-size: 1.5rem;
+                font-weight: bold;
+                align-items: center;
+                img{
+                    width: 60px;
+                    float: left;
+                    position: relative;
+                    align-items: center;
+                }
+                a{
+                    padding: 5px 10px;
+                    color: #fff;
+                    text-decoration: none;
+                    border: none;
+                    border-radius: 5px;
+                }
+            }
+            ul{
+                list-style: none;
+                .menu-contenido{
+                    background-color: #303030;
+                }
+            }
+            .navbar{
+                margin: 0%;
+                gap: .625rem;
+                a{
+                    padding: 5px 10px;
+                    color: #fff;
+                    text-decoration: none;
+                    border: none;
+                    border-radius: 5px;
+                    &:hover{
+                        color: rgb(194, 118, 104);
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        nav #toggle, nav label{
+            display: none;
+            padding: 10px;
+            margin: 10px;
+        }
+    }
+}

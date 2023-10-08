@@ -1,0 +1,40 @@
+footer{
+    display: flex;
+    background-color: #303030;
+    position: sticky;
+    padding-bottom: 0;
+    margin: 0;
+    section{
+        display: flex;
+        div{
+            p{
+                display: flex;
+                list-style-type: none;
+                gap: .625rem;
+                margin: 10px;
+                padding: 1.875rem;
+                color: #fff;
+            }
+        }
+        div{
+            display: flex;
+            align-items: center;
+            ul{
+                display: flex;
+                justify-content: flex-end;
+                position: absolute;
+                list-style-type: none;
+                right: 0;
+                gap: .625rem;
+                margin: 10px;
+                padding: 10px;
+                li{
+                    width: 100%;
+                    img{
+                        width: 2.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
