@@ -415,16 +415,16 @@ h2{
 
 @media (min-width:320px){
     .cliente{
-    width: 50vw;
-    max-width: 768px;
-    min-width: 0px;
-    height: 50vw;
-    max-height: 768px;
-    min-height: 0px;
-    margin: auto;
-    overflow: hidden;
-    border: .125rem solid;
-    border-radius: 100%;
+        width: 50vw;
+        max-width: 768px;
+        min-width: 0px;
+        height: 50vw;
+        max-height: 768px;
+        min-height: 0px;
+        margin: auto;
+        overflow: hidden;
+        border: .125rem solid;
+        border-radius: 100%;
     }
     .cliente-reseña{
         justify-items: center;
@@ -433,7 +433,6 @@ h2{
     .aumentar-texto{
         font-size: 16px;
     }
-
 }
 
 @media(min-width:375px)

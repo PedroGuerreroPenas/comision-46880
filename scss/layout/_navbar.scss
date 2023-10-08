@@ -16,6 +16,11 @@ header{
                 font-size: 1.5rem;
                 font-weight: bold;
                 align-items: center;
+                nav #toggle, nav label{
+                    display: none;
+                    padding: 10px;
+                    margin: 10px;
+                }
                 img{
                     width: 60px;
                     float: left;
@@ -51,11 +56,6 @@ header{
                     }
                 }
             }
-        }
-        nav #toggle, nav label{
-            display: none;
-            padding: 10px;
-            margin: 10px;
         }
     }
 }

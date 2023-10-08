@@ -1,13 +1,12 @@
-footer{
+#footer {
     display: flex;
     background-color: #303030;
     position: sticky;
     padding-bottom: 0;
     margin: 0;
-    section{
+    .acomodar{
         display: flex;
-        div{
-            p{
+            .copyright{
                 display: flex;
                 list-style-type: none;
                 gap: .625rem;
@@ -15,11 +14,10 @@ footer{
                 padding: 1.875rem;
                 color: #fff;
             }
-        }
-        div{
+        .mover{
             display: flex;
             align-items: center;
-            ul{
+            .red{
                 display: flex;
                 justify-content: flex-end;
                 position: absolute;

@@ -10,8 +10,15 @@
 @import "./layout/navbar";
 @import "./layout/footer";
 @import "./layout/main-index";
+@import "./layout/main-galeria";
 // components
 
 // mediaquery
 
+@import "./layout/media/media320-768";
 @import "./layout/media/media320";
+@import "./layout/media/media375";
+@import "./layout/media/media425";
+@import "./layout/media/media768";
+@import "./layout/media/media1024";
+@import "./layout/media/media1440";
