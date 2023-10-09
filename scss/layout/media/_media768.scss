@@ -2,7 +2,22 @@
     .aumentar-texto{
         font-size: 24px;
     }
-    .reseña{
-        display: flex;
+    .arte{
+        display: grid;
+        grid-template-columns: repeat(4, 140px);
+        grid-template-rows: repeat(5, 140px);
+        grid-template-areas: 
+        "arte-1 arte-1 arte-1 arte-2 "
+        "arte-1 arte-1 arte-1 arte-2"
+        "arte-1 arte-1 arte-1 arte-3"
+        "arte-4 arte-4 arte-5 arte-5"
+        "arte-4 arte-4 arte-5 arte-5"
+        ;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        gap: 1.25rem;
+        margin-bottom: 50px;
     }
 }

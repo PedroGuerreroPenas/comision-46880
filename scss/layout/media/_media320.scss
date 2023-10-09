@@ -15,7 +15,29 @@
         justify-items: center;
         font-size: 1em;
     }
+    .reseña{
+        flex-direction: column;
+    }
     .aumentar-texto{
         font-size: 16px;
+    }
+    .arte{
+        display: grid;
+        grid-template-columns: repeat(3, 80px);
+        grid-template-rows: repeat(6, 80px);
+        grid-template-areas: 
+        "arte-1 arte-1 arte-1"
+        "arte-1 arte-1 arte-1"
+        "arte-1 arte-1 arte-1"
+        "arte-2 arte-4 arte-4"
+        "arte-2 arte-4 arte-4"
+        "arte-3 arte-5 arte-5"
+        ;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        gap: 1.25rem;
+        margin-bottom: 50px;
     }
 }
