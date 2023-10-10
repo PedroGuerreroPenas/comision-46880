@@ -1,16 +1,19 @@
 // primero se llama utilities
 @import "./utilities/mixins";
+@import "./utilities/variables";
 
 // Despes se elije la carpeta base
 
 @import "./base/reset";
-
+@import "./base/bg-h2";
+@import "./base/setFooter";
 // despues layout 
 
 @import "./layout/navbar";
 @import "./layout/footer";
 @import "./layout/main-index";
 @import "./layout/main-galeria";
+@import "./layout/main-AcercaDeNosotros";
 // components
 
 // mediaquery
