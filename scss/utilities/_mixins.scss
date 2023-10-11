@@ -1,6 +1,24 @@
-@mixin img ($max-width, $minw, $maxh, $minh){
-    max-width: $max-width;
-    min-width: $minw;
-    max-height: $maxh;
-    min-height: $minh;
+@mixin grid ($columns, $rows){
+    display: grid;
+    grid-template-columns: $columns;
+    grid-template-rows: $rows;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 1.25rem;
+    margin-bottom: 50px;
+}
+
+@mixin grid-section($grid-area){
+    grid-area: $grid-area;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    object-fit: cover;
+    img{
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+    }
 }

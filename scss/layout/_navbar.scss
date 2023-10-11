@@ -1,11 +1,15 @@
 header{
     section{
         display: flex;
-        background-color: #303030;
+        background-color: $bg-color;
         .nav-wrapper{
             width: 100%;
         }
         nav{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
             #toggle{
                 display: none;
             }
@@ -13,10 +17,6 @@ header{
                 padding: .625rem;
                 margin: .625rem;
             }
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
             .Logo{
                 font-weight: 700;
                 display: flex;
@@ -29,9 +29,9 @@ header{
                     position: relative;
                     align-items: center;
                 }
-                a{
+                a {
                     padding: 5px 10px;
-                    color: #fff;
+                    color: $font-color;
                     text-decoration: none;
                     border: none;
                     border-radius: 5px;
@@ -40,7 +40,10 @@ header{
             ul{
                 list-style: none;
                 .menu-contenido{
-                    background-color: #303030;
+                    background-color: $bg-color;
+                    &:active{
+                        background-color: $bg-color;
+                    }
                 }
             }
             .navbar{
@@ -48,13 +51,15 @@ header{
                 gap: .625rem;
                 a{
                     padding: 5px 10px;
-                    color: #fff;
+                    color: $font-color;
                     text-decoration: none;
                     border: none;
                     border-radius: 5px;
                     &:hover{
                         color: rgb(194, 118, 104);
                         text-decoration: underline;
+                        text-underline-offset: 4px;
+                        transition: color 0.3s;
                     }
                 }
             }

@@ -5,10 +5,6 @@
   box-sizing: border-box;
 }
 
-h2 {
-  background-color: gray;
-}
-
 .fot {
   height: 100vh;
 }
@@ -71,6 +67,9 @@ header section nav ul {
 header section nav ul .menu-contenido {
   background-color: #303030;
 }
+header section nav ul .menu-contenido:active {
+  background-color: #303030;
+}
 header section nav .navbar {
   margin: 0%;
   gap: 0.625rem;
@@ -85,6 +84,8 @@ header section nav .navbar a {
 header section nav .navbar a:hover {
   color: rgb(194, 118, 104);
   text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: color 0.3s;
 }
 
 #footer {
@@ -162,13 +163,13 @@ header section nav .navbar a:hover {
   display: grid;
   grid-template-columns: repeat(6, 200px);
   grid-template-rows: repeat(3, 200px);
-  grid-template-areas: "arte-1 arte-1 arte-1 arte-2 arte-5 arte-5" "arte-1 arte-1 arte-1 arte-2 arte-4 arte-4" "arte-1 arte-1 arte-1 arte-3 arte-4 arte-4";
   justify-content: center;
   align-content: center;
   justify-items: center;
   align-items: center;
   gap: 1.25rem;
   margin-bottom: 50px;
+  grid-template-areas: "arte-1 arte-1 arte-1 arte-2 arte-5 arte-5" "arte-1 arte-1 arte-1 arte-2 arte-4 arte-4" "arte-1 arte-1 arte-1 arte-3 arte-4 arte-4";
 }
 
 .arte_grid-1, .arte_grid-5, .arte_grid-4, .arte_grid-3, .arte_grid-2 {
@@ -186,6 +187,14 @@ header section nav .navbar a:hover {
 
 .arte_grid-2 {
   grid-area: arte-2;
+  color: transparent;
+}
+.arte_grid-2:hover {
+  color: black;
+}
+.arte_grid-2 .texto {
+  position: absolute;
+  top: 0;
 }
 
 .arte_grid-3 {
@@ -213,9 +222,89 @@ header section nav .navbar a:hover {
   margin-top: 10px;
 }
 
+.comunidad {
+  display: grid;
+  grid-template-columns: repeat(6, 200px);
+  grid-template-rows: repeat(4, 200px);
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 50px;
+  grid-template-areas: "com-1 com-1 com-4 com-4 com-5 com-5" "com-1 com-1 com-4 com-4 com-5 com-5" "com-3 com-3 com-2 com-2 com-6 com-6" "com-3 com-3 com-2 com-2 com-6 com-6";
+}
+
+.comunidad_grid-1, .comunidad_grid-6, .comunidad_grid-5, .comunidad_grid-4, .comunidad_grid-3, .comunidad_grid-2 {
+  grid-area: com-1;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  object-fit: cover;
+  color: transparent;
+}
+.comunidad_grid-1 img, .comunidad_grid-6 img, .comunidad_grid-5 img, .comunidad_grid-4 img, .comunidad_grid-3 img, .comunidad_grid-2 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.comunidad_grid-1 .texto, .comunidad_grid-6 .texto, .comunidad_grid-5 .texto, .comunidad_grid-4 .texto, .comunidad_grid-3 .texto, .comunidad_grid-2 .texto {
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+}
+.comunidad_grid-1:hover, .comunidad_grid-6:hover, .comunidad_grid-5:hover, .comunidad_grid-4:hover, .comunidad_grid-3:hover, .comunidad_grid-2:hover {
+  color: #fff;
+  transform: scale(1.2);
+  z-index: 2;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.comunidad_grid-2 {
+  grid-area: com-2;
+}
+
+.comunidad_grid-3 {
+  grid-area: com-3;
+}
+.comunidad_grid-3:hover {
+  color: #909132;
+}
+
+.comunidad_grid-4 {
+  grid-area: com-4;
+}
+
+.comunidad_grid-5 {
+  grid-area: com-5;
+}
+
+.comunidad_grid-6 {
+  grid-area: com-6;
+}
+
+.mural-item_arte {
+  position: relative;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.espacio {
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 10px;
+}
+
 .aboutUs {
   justify-content: center;
+  align-items: center;
   margin: 3.75rem;
+}
+
+.AcercaDeNosotros {
+  display: flex;
+  align-items: center;
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
@@ -266,13 +355,25 @@ header section nav .navbar a:hover {
     display: grid;
     grid-template-columns: repeat(3, 80px);
     grid-template-rows: repeat(6, 80px);
-    grid-template-areas: "arte-1 arte-1 arte-1" "arte-1 arte-1 arte-1" "arte-1 arte-1 arte-1" "arte-2 arte-4 arte-4" "arte-2 arte-4 arte-4" "arte-3 arte-5 arte-5";
     justify-content: center;
     align-content: center;
     justify-items: center;
     align-items: center;
     gap: 1.25rem;
     margin-bottom: 50px;
+    grid-template-areas: "arte-1 arte-1 arte-1" "arte-1 arte-1 arte-1" "arte-1 arte-1 arte-1" "arte-2 arte-4 arte-4" "arte-2 arte-4 arte-4" "arte-3 arte-5 arte-5";
+  }
+  .comunidad {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    grid-template-rows: repeat(8, 80px);
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 1.25rem;
+    margin-bottom: 50px;
+    grid-template-areas: "com-1 com-1 com-1" "com-1 com-1 com-1" "com-4 com-4 com-4" "com-4 com-4 com-4" "com-5 com-5 com-3" "com-5 com-5 com-3" "com-6 com-6 com-2" "com-6 com-6 com-2";
   }
 }
 @media (min-width: 375px) {
@@ -281,32 +382,57 @@ header section nav .navbar a:hover {
   }
   .arte {
     display: grid;
+    display: grid;
     grid-template-columns: repeat(3, 90px);
     grid-template-rows: repeat(6, 90px);
-    grid-template-areas: "arte-1 arte-1 arte-1" "arte-1 arte-1 arte-1" "arte-1 arte-1 arte-1" "arte-2 arte-4 arte-4" "arte-2 arte-4 arte-4" "arte-3 arte-5 arte-5";
     justify-content: center;
     align-content: center;
     justify-items: center;
     align-items: center;
     gap: 1.25rem;
     margin-bottom: 50px;
+    grid-template-areas: "arte-1 arte-1 arte-1" "arte-1 arte-1 arte-1" "arte-1 arte-1 arte-1" "arte-2 arte-4 arte-4" "arte-2 arte-4 arte-4" "arte-3 arte-5 arte-5";
+  }
+  .comunidad {
+    display: grid;
+    grid-template-columns: repeat(3, 90px);
+    grid-template-rows: repeat(8, 90px);
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 1.25rem;
+    margin-bottom: 50px;
+    grid-template-areas: "com-1 com-1 com-1" "com-1 com-1 com-1" "com-4 com-4 com-4" "com-4 com-4 com-4" "com-5 com-5 com-3" "com-5 com-5 com-3" "com-6 com-6 com-2" "com-6 com-6 com-2";
   }
 }
 @media (min-width: 425px) {
   .aumentar-texto {
-    font-size: 19px;
+    font-size: 20px;
   }
   .arte {
     display: grid;
     grid-template-columns: repeat(3, 100px);
     grid-template-rows: repeat(6, 100px);
-    grid-template-areas: "arte-1 arte-1 arte-1" "arte-1 arte-1 arte-1" "arte-1 arte-1 arte-1" "arte-2 arte-4 arte-4" "arte-2 arte-4 arte-4" "arte-3 arte-5 arte-5";
     justify-content: center;
     align-content: center;
     justify-items: center;
     align-items: center;
     gap: 1.25rem;
     margin-bottom: 50px;
+    grid-template-areas: "arte-1 arte-1 arte-1" "arte-1 arte-1 arte-1" "arte-1 arte-1 arte-1" "arte-2 arte-4 arte-4" "arte-2 arte-4 arte-4" "arte-3 arte-5 arte-5";
+  }
+  .comunidad {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(8, 100px);
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 1.25rem;
+    margin-bottom: 50px;
+    grid-template-areas: "com-1 com-1 com-1" "com-1 com-1 com-1" "com-4 com-4 com-4" "com-4 com-4 com-4" "com-5 com-5 com-3" "com-5 com-5 com-3" "com-6 com-6 com-2" "com-6 com-6 com-2";
   }
 }
 @media (min-width: 768px) {
@@ -317,13 +443,25 @@ header section nav .navbar a:hover {
     display: grid;
     grid-template-columns: repeat(4, 140px);
     grid-template-rows: repeat(5, 140px);
-    grid-template-areas: "arte-1 arte-1 arte-1 arte-2 " "arte-1 arte-1 arte-1 arte-2" "arte-1 arte-1 arte-1 arte-3" "arte-4 arte-4 arte-5 arte-5" "arte-4 arte-4 arte-5 arte-5";
     justify-content: center;
     align-content: center;
     justify-items: center;
     align-items: center;
     gap: 1.25rem;
     margin-bottom: 50px;
+    grid-template-areas: "arte-1 arte-1 arte-1 arte-2 " "arte-1 arte-1 arte-1 arte-2" "arte-1 arte-1 arte-1 arte-3" "arte-4 arte-4 arte-5 arte-5" "arte-4 arte-4 arte-5 arte-5";
+  }
+  .comunidad {
+    display: grid;
+    grid-template-columns: repeat(4, 140px);
+    grid-template-rows: repeat(7, 140px);
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 1.25rem;
+    margin-bottom: 50px;
+    grid-template-areas: "com-1 com-1 com-4 com-4" "com-1 com-1 com-4 com-4" "com-5 com-5 com-2 com-3" "com-5 com-5 com-2 com-3" "com-6 com-6 com-6 com-6" "com-6 com-6 com-6 com-6" "com-6 com-6 com-6 com-6";
   }
 }
 @media (min-width: 1024px) {
@@ -337,13 +475,25 @@ header section nav .navbar a:hover {
     display: grid;
     grid-template-columns: repeat(6, 150px);
     grid-template-rows: repeat(3, 150px);
-    grid-template-areas: "arte-1 arte-1 arte-1 arte-2 arte-5 arte-5" "arte-1 arte-1 arte-1 arte-2 arte-4 arte-4" "arte-1 arte-1 arte-1 arte-3 arte-4 arte-4";
     justify-content: center;
     align-content: center;
     justify-items: center;
     align-items: center;
     gap: 1.25rem;
     margin-bottom: 50px;
+    grid-template-areas: "arte-1 arte-1 arte-1 arte-2 arte-5 arte-5" "arte-1 arte-1 arte-1 arte-2 arte-4 arte-4" "arte-1 arte-1 arte-1 arte-3 arte-4 arte-4";
+  }
+  .comunidad {
+    display: grid;
+    grid-template-columns: repeat(6, 150px);
+    grid-template-rows: repeat(4, 150px);
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 1.25rem;
+    margin-bottom: 50px;
+    grid-template-areas: "com-1 com-1 com-4 com-4 com-5 com-5" "com-1 com-1 com-4 com-4 com-5 com-5" "com-3 com-3 com-2 com-2 com-6 com-6" "com-3 com-3 com-2 com-2 com-6 com-6";
   }
 }
 @media (min-width: 1440px) {
@@ -354,13 +504,25 @@ header section nav .navbar a:hover {
     display: grid;
     grid-template-columns: repeat(6, 200px);
     grid-template-rows: repeat(3, 200px);
-    grid-template-areas: "arte-1 arte-1 arte-1 arte-2 arte-5 arte-5" "arte-1 arte-1 arte-1 arte-2 arte-4 arte-4" "arte-1 arte-1 arte-1 arte-3 arte-4 arte-4";
     justify-content: center;
     align-content: center;
     justify-items: center;
     align-items: center;
     gap: 1.25rem;
     margin-bottom: 50px;
+    grid-template-areas: "arte-1 arte-1 arte-1 arte-2 arte-5 arte-5" "arte-1 arte-1 arte-1 arte-2 arte-4 arte-4" "arte-1 arte-1 arte-1 arte-3 arte-4 arte-4";
+  }
+  .comunidad {
+    display: grid;
+    grid-template-columns: repeat(6, 200px);
+    grid-template-rows: repeat(4, 200px);
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 1.25rem;
+    margin-bottom: 50px;
+    grid-template-areas: "com-1 com-1 com-4 com-4 com-5 com-5" "com-1 com-1 com-4 com-4 com-5 com-5" "com-3 com-3 com-2 com-2 com-6 com-6" "com-3 com-3 com-2 com-2 com-6 com-6";
   }
 }
 

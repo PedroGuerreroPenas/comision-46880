@@ -1,11 +1,10 @@
 // primero se llama utilities
 @import "./utilities/mixins";
 @import "./utilities/variables";
-
+@import "./utilities/maps";
 // Despes se elije la carpeta base
 
 @import "./base/reset";
-@import "./base/bg-h2";
 @import "./base/setFooter";
 // despues layout 
 
@@ -13,6 +12,7 @@
 @import "./layout/footer";
 @import "./layout/main-index";
 @import "./layout/main-galeria";
+@import "./layout/main-comunidad";
 @import "./layout/main-AcercaDeNosotros";
 // components
 

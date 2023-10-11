@@ -1,11 +1,8 @@
 @media (min-width:768px){
     .aumentar-texto{
-        font-size: 24px;
-    }
+        font-size: map-get($font-size, l );    }
     .arte{
-        display: grid;
-        grid-template-columns: repeat(4, 140px);
-        grid-template-rows: repeat(5, 140px);
+        @include grid(repeat(4, 140px), repeat(5, 140px));
         grid-template-areas: 
         "arte-1 arte-1 arte-1 arte-2 "
         "arte-1 arte-1 arte-1 arte-2"
@@ -13,11 +10,17 @@
         "arte-4 arte-4 arte-5 arte-5"
         "arte-4 arte-4 arte-5 arte-5"
         ;
-        justify-content: center;
-        align-content: center;
-        justify-items: center;
-        align-items: center;
-        gap: 1.25rem;
-        margin-bottom: 50px;
+    }
+    .comunidad{
+        @include grid(repeat(4, 140px),repeat(7, 140px));
+        grid-template-areas: 
+        "com-1 com-1 com-4 com-4"
+        "com-1 com-1 com-4 com-4"
+        "com-5 com-5 com-2 com-3"
+        "com-5 com-5 com-2 com-3"
+        "com-6 com-6 com-6 com-6"
+        "com-6 com-6 com-6 com-6"
+        "com-6 com-6 com-6 com-6"
+        ;
     }
 }
