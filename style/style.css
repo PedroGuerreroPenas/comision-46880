@@ -333,18 +333,6 @@ header section .nav-wrapper .navbar a:hover {
   transition: color 0.3s, transform 0.3s;
 }
 
-.section-7 {
-  color: #b3a243;
-}
-
-.section-8 {
-  color: #b3a243;
-}
-
-.section-9 {
-  color: #b3a243;
-}
-
 .mural-item_arte {
   position: relative;
   object-fit: cover;
@@ -356,6 +344,25 @@ header section .nav-wrapper .navbar a:hover {
   text-align: center;
   margin-bottom: 40px;
   margin-top: 10px;
+}
+
+.centro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  min-width: 320px;
+  margin: 40px;
+  padding: 40px;
+}
+
+.fondo {
+  background-image: url("../../asset/img/gif/maxwell.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
