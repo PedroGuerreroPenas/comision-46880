@@ -12,14 +12,6 @@
 .arte_grid-2{
     @extend .arte_grid-1;
     grid-area: arte-2;
-    color: transparent;
-    &:hover{
-        color: black;
-    }
-    .texto{
-        position: absolute;
-        top: 0;
-    }
 }
 .arte_grid-3{
     @extend .arte_grid-1;

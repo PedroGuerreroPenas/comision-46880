@@ -4,30 +4,30 @@ header{
         background-color: $bg-color;
         .nav-wrapper{
             width: 100%;
-        }
-        nav{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
             #toggle{
                 display: none;
             }
-            label{
+            label #none{
                 padding: .625rem;
                 margin: .625rem;
             }
-            .Logo{
-                font-weight: 700;
+            nav{
                 display: flex;
-                font-size: 1.5rem;
-                font-weight: bold;
+                flex-wrap: wrap;
+                justify-content: space-between;
                 align-items: center;
-                img{
-                    width: 60px;
-                    float: left;
-                    position: relative;
+                .Logo{
+                    font-weight: 700;
+                    display: flex;
+                    font-size: 1.5rem;
+                    font-weight: bold;
                     align-items: center;
+                    img{
+                        width: 60px;
+                        flex-direction: left;
+                        position: relative;
+                        align-items: center;
+                    }
                 }
                 a {
                     padding: 5px 10px;
@@ -36,16 +36,16 @@ header{
                     border: none;
                     border-radius: 5px;
                 }
-            }
-            ul{
-                list-style: none;
-                .menu-contenido{
-                    background-color: $bg-color;
-                    &:active{
+                }
+                ul{
+                    list-style: none;
+                    .menu-contenido{
                         background-color: $bg-color;
+                        &:active{
+                            background-color: $bg-color;
+                        }
                     }
                 }
-            }
             .navbar{
                 margin: 0%;
                 gap: .625rem;
