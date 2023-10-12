@@ -28,12 +28,15 @@ header section {
 header section .nav-wrapper {
   width: 100%;
 }
-header section .nav-wrapper #toggle {
-  display: none;
-}
-header section .nav-wrapper label #none {
+header section .nav-wrapper label {
   padding: 0.625rem;
   margin: 0.625rem;
+}
+header section .nav-wrapper label #toggle {
+  display: none;
+}
+header section .nav-wrapper label #toggle i .material-icons {
+  display: none;
 }
 header section .nav-wrapper nav {
   display: flex;
@@ -333,6 +336,10 @@ header section .nav-wrapper .navbar a:hover {
   transition: color 0.3s, transform 0.3s;
 }
 
+.section-7:hover {
+  color: #b7c443;
+}
+
 .mural-item_arte {
   position: relative;
   object-fit: cover;
@@ -351,11 +358,7 @@ header section .nav-wrapper .navbar a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  max-width: 100%;
-  min-width: 320px;
-  margin: 40px;
-  padding: 40px;
+  margin-top: 20px;
 }
 
 .fondo {
