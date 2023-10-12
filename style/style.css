@@ -380,6 +380,7 @@ header section .nav-wrapper .navbar a:hover {
   background-image: url("../../asset/img/gif/maxwell-cat.gif");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   background-attachment: fixed;
 }
 
