@@ -4,12 +4,17 @@ header{
         background-color: $bg-color;
         .nav-wrapper{
             width: 100%;
-            #toggle{
-                display: none;
-            }
-            label #none{
+            label{
                 padding: .625rem;
                 margin: .625rem;
+                #toggle{
+                    display: none;
+                    i{
+                        .material-icons{
+                            display: none;
+                        }
+                    }
+                }
             }
             nav{
                 display: flex;
