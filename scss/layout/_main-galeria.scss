@@ -8,6 +8,11 @@
 }
 .arte_grid-1{
     @include grid-section(arte-1);
+    &:hover{
+        transform: scale(1.1);
+        z-index: 2;
+        transition: transform 0.3s;
+    }
 }
 .arte_grid-2{
     @extend .arte_grid-1;
