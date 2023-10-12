@@ -53,9 +53,15 @@
 }
 .section-8{
     @extend .section-1;
+    &:hover{
+        color: #b7c443
+    }
 }
 .section-9{
     @extend .section-1;
+    &:hover{
+        color: #b7c443
+    }
 }
 .mural-item_arte{
     position: relative;

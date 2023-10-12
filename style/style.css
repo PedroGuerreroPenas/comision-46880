@@ -29,13 +29,11 @@ header section .nav-wrapper {
   width: 100%;
 }
 header section .nav-wrapper label {
+  display: none;
   padding: 0.625rem;
   margin: 0.625rem;
 }
-header section .nav-wrapper label #toggle {
-  display: none;
-}
-header section .nav-wrapper label #toggle i .material-icons {
+header section .nav-wrapper #toggle {
   display: none;
 }
 header section .nav-wrapper nav {
@@ -340,6 +338,14 @@ header section .nav-wrapper .navbar a:hover {
   color: #b7c443;
 }
 
+.section-8:hover {
+  color: #b7c443;
+}
+
+.section-9:hover {
+  color: #b7c443;
+}
+
 .mural-item_arte {
   position: relative;
   object-fit: cover;
@@ -361,32 +367,42 @@ header section .nav-wrapper .navbar a:hover {
   margin-top: 20px;
 }
 
+.map {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
 .fondo {
-  background-image: url("../../asset/img/gif/maxwell.gif");
+  background-image: url("../../asset/img/gif/maxwell-cat.gif");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
-  nav {
+  header section .nav-wrapper label {
+    display: block;
+    display: flex;
+    color: #fff;
+  }
+  header section .nav-wrapper #toggle:checked ~ .menu {
+    height: 100%;
+  }
+  header section .nav-wrapper nav {
     width: auto;
   }
-  nav .menu {
+  header section .nav-wrapper nav .menu {
     width: 100%;
     height: 0;
     overflow: hidden;
   }
-  nav ul {
+  header section .nav-wrapper nav ul {
     flex-direction: column;
     align-items: center;
-  }
-  nav label {
-    display: flex;
-    color: #fff;
-  }
-  nav #toggle:checked ~ .menu {
-    height: 100%;
   }
 }
 @media (min-width: 320px) {

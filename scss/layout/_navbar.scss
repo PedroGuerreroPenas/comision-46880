@@ -5,16 +5,12 @@ header{
         .nav-wrapper{
             width: 100%;
             label{
+                display: none;
                 padding: .625rem;
                 margin: .625rem;
-                #toggle{
-                    display: none;
-                    i{
-                        .material-icons{
-                            display: none;
-                        }
-                    }
-                }
+            }
+            #toggle{
+                display: none;
             }
             nav{
                 display: flex;
