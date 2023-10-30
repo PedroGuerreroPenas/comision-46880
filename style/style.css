@@ -296,7 +296,8 @@ header section .nav-wrapper .navbar a:hover {
   height: 10vh;
 }
 .agregar:hover {
-  background-color: rgb(8, 101, 117);
+  background-color: rgb(57, 205, 231);
+  transition: background-color 0.3s;
 }
 
 .comunidad {
