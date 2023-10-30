@@ -5,7 +5,7 @@
         flex-direction: row;
     }
     .arte{
-        @include grid(repeat(6, 150px), repeat(3, 150px));
+        @include grid(repeat(6, 145px), repeat(3, 145px));
         grid-template-areas: 
         "arte-1 arte-1 arte-1 arte-2 arte-5 arte-5"
         "arte-1 arte-1 arte-1 arte-2 arte-4 arte-4"
@@ -13,7 +13,7 @@
         ;
     }
     .comunidad{
-        @include grid(repeat(6, 150px),repeat(4, 150px));
+        @include grid(repeat(6, 130px),repeat(4, 130px));
         grid-template-areas: 
         "com-1 com-1 com-4 com-4 com-5 com-5"
         "com-1 com-1 com-4 com-4 com-5 com-5"

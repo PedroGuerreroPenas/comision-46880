@@ -10,14 +10,13 @@
 .comunidad_grid-1{
     @include grid-section(com-1);
     color: transparent;
-    
     .texto{
         position: absolute;
         bottom: 0;
         left: 5px;
     }
     &:hover{
-        color: #fff;
+        color: #000000;
         transform: scale(1.1);
         z-index: 2;
         transition: color 0.3s, transform 0.3s;
@@ -30,9 +29,6 @@
 .comunidad_grid-3{
     @extend .comunidad_grid-1;
     grid-area: com-3;
-    &:hover{
-        color: #909132;
-    }
 }
 .comunidad_grid-4{
     @extend .comunidad_grid-1;
