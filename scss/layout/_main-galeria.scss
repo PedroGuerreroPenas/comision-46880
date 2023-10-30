@@ -44,12 +44,12 @@
     text-align: center;
     margin-bottom: 40px;
     margin-top: 10px;
-
 }
 .agregar{
+    border-radius: 5px;
+    width: 50%;
+    height: 10vh;
     &:hover{
-        background-color: rgb(168, 168, 168);
-        border-radius: 5px;
-        transition: background-color 0.3s;
+        background-color: rgb(8, 101, 117);
     }
 }
