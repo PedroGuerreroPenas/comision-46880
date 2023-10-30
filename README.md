@@ -43,7 +43,7 @@
 | Foto de producto, Por unidad(9)  | $12,781	 = $115,029 |  $9,231	= $83,079 | $6,302	 = $56,781 |
 |  Desarrollo de Web Site Institucional | $110,355	  | $83,728	  |  $62,130	 |
 |  Diseño y maquetación de sitio HTML5 y CSS3 | $133,136	  | $113,610	  | $89,941	  |
-| Total  | $358,520  | $280,417  | $208,852  |
+| Total  | $358,520  | $369,174  | $267,352  |
 
 ## Nota:
 
